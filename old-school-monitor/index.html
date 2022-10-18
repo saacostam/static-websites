@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Acosta Meza</title>
+    <link href="http://fonts.cdnfonts.com/css/apple-ii-screen-typeface" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar-logo">
+            <img src="./img/logo.png" alt="logo.png">
+        </div>
+        <ul id="navbar-menu">
+            <li class="nav-options" id="nav-menu-about-me">About Me</li>
+            <li class="nav-options" id="nav-menu-projects">Projects</li>
+            <li class="nav-options" id="nav-menu-props">Props</li>
+        </ul>
+        <div id="clock"></div>
+    </nav>
+
+    <div id="desktop">
+        <ul id="desktop-menu">
+            <li class="desktop-icon" id="desktop-icon-about-me">
+                <img src="./img/me.png" alt="about-me">
+                <div>About Me</div>
+            </li>
+            <li class="desktop-icon" id="desktop-icon-projects">
+                <img src="./img/portfolio.png" alt="projects">
+                <div>Projects</div>
+            </li>
+            <li class="desktop-icon" id="desktop-icon-props">
+                <img src="./img/props.png" alt="props">
+                <div>Props</div>
+            </li>
+        </ul>
+        
+        <div id="projects" class="window">
+            <div class="window-header">
+                <div class="window-title">Projects</div>
+                <div class="window-close">✖</div>
+            </div>
+            <hr>
+            <div class="window-content">
+                <p>Check some of my projects:</p>
+                <ul id="projects-menu">
+                </ul>
+            </div>
+        </div>
+
+        <div id="about-me" class="window">
+            <div class="window-header">
+                <div class="window-title">About Me</div>
+                <div class="window-close">✖</div>
+            </div>
+            <hr>
+            <div class="window-content">
+                <p>Hi, I'm Santiago.</p>
+                <p>A software engineer based in Bogota. Currently coursing my 8th semester at the <a href="https://unal.edu.co/" target="_blank">National University of Colombia</a>.</p>
+                <p>My main interest is full-stack software development using web-based technologies.</p>
+            </div>
+        </div>
+
+        <div id="props" class="window">
+            <div class="window-header">
+                <div class="window-title">Thank You</div>
+                <div class="window-close">✖</div>
+            </div>
+            <hr>
+            <div class="window-content">
+                <p>The design of this webpage was heavily inspired by <a href="https://www.behance.net/gallery/147432335/Portfolio-Website-Design?tracking_source=search_projects%7Cgame" target="_blank">Sherlyn Tandinata's design</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

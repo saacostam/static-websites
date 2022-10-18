@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ristorante Con Fusion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .jumbotron{
+            background-color: rgb(149, 117, 205);
+            color:white;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        .footer{
+            background-color: rgb(209, 196, 233);
+        }
+
+        .navbar{
+            background-color: rgb(81, 51, 165);
+        }
+
+        #section-group{
+            height: 2rem;
+        }
+
+        #section-group label{
+            padding: 0.2rem;
+        }
+
+        div.modal-header{
+            background-color: purple;
+        }
+
+        div.modal-body{
+            background-color: floralwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Reserve a Table</h5>
+                    <button type="button" class="close" id="close-button" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroup1">Number of Guests</label>
+                            <div class="form-check form-check-inline" id="formGroup1">
+                                <input class="form-check-input" type="radio" id="radio1" value="option1">
+                                <label class="form-check-label m-1" for="radio1">1</label>
+                                <input class="form-check-input" type="radio" id="radio2" value="option2">
+                                <label class="form-check-label m-1" for="radio2">2</label>
+                                <input class="form-check-input" type="radio" id="radio3" value="option3">
+                                <label class="form-check-label m-1" for="radio3">3</label>
+                                <input class="form-check-input" type="radio" id="radio4" value="option4">
+                                <label class="form-check-label m-1" for="radio4">4</label>
+                                <input class="form-check-input" type="radio" id="radio5" value="option5">
+                                <label class="form-check-label m-1" for="radio5">5</label>
+                                <input class="form-check-input" type="radio" id="radio6" value="option6">
+                                <label class="form-check-label m-1" for="radio6">6</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupInput2">Section</label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="section-group">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="section1" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="section2" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div for="formGroupInput3">Date and Time</div>
+                            <input type="input" class="form-control-inline" id="formGroupInput3" placeholder="Date">
+                            <input type="input" class="form-control-inline" id="formGroupInput3" placeholder="Time">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="cancel-button">Cancel</button>
+                    <button type="button" class="btn btn-primary">Reserve</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="https://lugopapel.es/wp-content/uploads/2016/12/logo-placeholder-1.png" alt="Logo" class="img mx-auto d-block" height="36px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"><i class="fa-solid fa-house"></i> Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#"><i class="fa-solid fa-info"></i> About</a>
+                <a class="nav-item nav-link" href="#"><i class="fa-solid fa-bars"></i> Menu</a>
+                <a class="nav-item nav-link" href="#"><i class="fa-solid fa-address-card"></i> Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <img src="https://lugopapel.es/wp-content/uploads/2016/12/logo-placeholder-1.png" alt="Logo" class="img img-fluid mx-auto d-block">
+                </div>
+                <div class="col-12 col-sm-3 align-items-center justify-content-center d-flex">
+                    <button class="btn btn-sm btn-warning px-4 text-white" id="reserve-table-button">Reserve a table</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row p-3">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              Tel.: +852 1234 5678<br>
+		              Fax: +852 8765 4321<br>
+		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="http://google.com/+">Google+</a>
+                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
+                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
+                        <a href="http://twitter.com/">Twitter</a>
+                        <a href="http://youtube.com/">YouTube</a>
+                        <a href="mailto:">Mail</a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelector('#reserve-table-button').addEventListener('click', ()=>{
+            $('#exampleModal').modal('show')
+        })
+
+        document.querySelector('#close-button').addEventListener('click', ()=>{
+            $('#exampleModal').modal('hide')
+        })
+
+        document.querySelector('#cancel-button').addEventListener('click', ()=>{
+            $('#exampleModal').modal('hide')
+        })
+    </script>
+</body>
+
+</html>

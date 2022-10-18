@@ -1,0 +1,218 @@
+*{
+    font-family: 'Apple II Screen Typeface', sans-serif;         
+    font-size: 14px;                                     
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+
+    background-color: var(--grey);
+}
+
+:root {
+    --color: rgb(0, 0, 0);
+    --transparent: rgba(0, 0, 0, 0.2);
+    --white: #ffffff;
+    --grey: rgb(196, 196, 196);
+}
+
+#navbar{
+    background-color:var(--white);
+    padding: 0 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid var(--color);
+}
+
+#navbar-logo{
+    padding: 0.5rem;
+    background-color: var(--color);
+}
+
+#navbar-logo img{
+    width: 16px;
+    image-rendering: pixelated;
+}
+
+#navbar-menu{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.2rem;
+}
+
+#navbar-menu .nav-options{
+    list-style: none;
+    /* margin-right: 1.2rem; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color);
+    padding: 0 1rem;
+
+    user-select: none;
+}
+
+#navbar-menu .nav-options:hover{
+    background-color: var(--color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+#clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    color: var(--black);
+}
+
+#desktop{
+    flex-grow: 1;
+    background-color: var(--grey);
+}
+
+#desktop-menu{
+    list-style: none;
+    padding: 0;
+
+    position: absolute;
+    right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#desktop-menu .desktop-icon{
+    margin: 1rem 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.5rem;
+}
+
+#desktop-menu .desktop-icon:hover{
+    background-color: var(--transparent);
+
+}
+
+.window{
+    position: absolute;
+    border: 2px solid;
+    border-color: var(--black);
+
+    background-color: var(--white);
+}
+
+#projects{
+    left: 6rem;
+    top: 11rem;
+    width: 25rem;
+}
+
+#about-me{
+    right: 15rem;
+    top: 15rem;
+    width: 20rem;
+}
+
+#props{
+    left: 9rem;
+    top: 33rem;
+    width: 15rem;
+}
+
+.window hr{
+    margin: 0;
+    border: 1px solid;
+    border-color: var(--black);
+}
+
+.window .window-header{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-weight: 600;
+
+    user-select: none;
+    background-color: rgb(68, 149, 255);
+}
+
+.window .window-header .window-close{
+    position: absolute;
+    right: 0.5rem;
+    cursor: pointer;
+}
+
+.window .window-content{
+    padding: 0 0.5rem;
+}
+
+#projects-menu{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    user-select: none;
+}
+
+#projects-menu .project-ref{
+    width: 6rem;
+}
+
+#projects-menu .project-ref a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: var(--black);
+}
+
+#projects-menu .project-ref .project-name{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 576px) { 
+    #about-me{
+        left: 5rem;
+    }
+
+    #navbar-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) { 
+    #projects{
+        left: 1rem;
+    }
+
+    #desktop-menu{
+        left: 0;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    #desktop-menu .desktop-icon{
+        margin: 0.5rem 1rem;
+        padding: 0.5rem;
+    }
+}
