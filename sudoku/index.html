@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Sudoku</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- <h1>Sudoku</h1> -->
-    <div id="game"></div>
+    <script type="module" crossorigin src="./assets/index.0dba923f.js"></script>
+    <link rel="stylesheet" href="./assets/index.f4933e79.css">
+  </head>
+  <body>
+    <h1>Sudoku 🐰 <span style="font-size: 0.8rem; font-weight: 400; display: block; margin: 0.3rem;">by Santiago Acosta 💻</span></h1>
+    <div class="sudoku-wrapper">
+      <div>
+        <canvas id="app" width="1100" height="1100"></canvas>
+      </div>
+      <div id="ui">
+        <button id="new-game">New Game 🎮</button>
+        <button id="toggle-pencil">✅ Pen ✍</button>
 
-    <script src="index.js"></script>
-</body>
+        <div id="time"></div>
+      </div>
+    </div>
+    
+  </body>
 </html>
