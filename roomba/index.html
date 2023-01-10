@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Js: Roomba 🤖</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <h1 class="text-center">Roomba 🤖</h1>
+
+        <p>This small program simulates the cleaning process of a Roomba (an automated vacuum cleaner) and let's the user decide within different movement settings.</p>
+
+        <main></main>
+        <select name="mode" id="mode">
+            <option value="Random">Random</option>
+            <option value="HeatMap">HeatMap</option>
+            <option value="BFS">BFS</option>
+        </select>
+        
+        <div id="info"></div>
+    </div>
+
+    <script src="./modules/p5.min.js"></script>
+    <script src="./src/Utils.js"></script>
+    
+    <script src="./src/Roomba.js"></script>
+    <script src="./src/Sand.js"></script>
+    
+    <script src="./main.js"></script>
+    <script src="./src/UI.js"></script>
+</body>
+</html>
