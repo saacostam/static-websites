@@ -13,6 +13,11 @@ const navCards = [
         title: 'Music Visualizer 🎵',
         paragraph: 'Music Visualizer prototype created with the HTML canvas element.',
         href: 'https://saacostam.github.io/music-visualizer/'
+    },
+    {
+        title: 'Roomba Path Simulator 🤖',
+        paragraph: 'Simulation of the cleaning process of a Roomba (an automated vacuum cleaner).',
+        href: './roomba',
     }
 ]
 
