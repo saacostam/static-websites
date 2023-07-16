@@ -18,6 +18,11 @@ const navCards = [
         title: 'Roomba Path Simulator 🤖',
         paragraph: 'Simulation of the cleaning process of a Roomba (an automated vacuum cleaner).',
         href: './roomba',
+    },
+    {
+        title: 'Signal Grid 🔌',
+        paragraph: 'A game similar to pipe puzzles.',
+        href: './signal-grid',
     }
 ]
 
