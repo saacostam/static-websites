@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6970d151-b3b3-4e3e-97a8-b344230b9c3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/signal-grid/assets/index-c741e76c.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signal-grid/assets/index-d861f04f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signal-grid/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signal-grid/vite.svg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SdGou2GobzGm24eLnNaaAvpJA9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Santiago/dev/personal/in-progress/static-websites/old-school-monitor",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Santiago\dev\personal\in-progress\static-websites\old-school-monitor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Santiago\dev\personal\in-progress\static-websites" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6970d151-b3b3-4e3e-97a8-b344230b9c3a" name="Changes" comment="" />
+      <created>1689469222955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689469222955</updated>
+      <workItem from="1689469224647" duration="179000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
